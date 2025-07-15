@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: #000;
   background: #fff;
   min-height: 100%;
@@ -43,16 +43,20 @@ h2 {
 }
 
 .image-logo {
-  width: 140px;
+  width: 180px;
   z-index: 10;
+  position: absolute;
+  left: 200px;
+  top:100px;
 }
 
 .desktop-menu {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  font-size:0.875rem;
   position: absolute;
-  top: 0;
-  right: 2rem;
+  top: 100px;
+  right:12rem;
   color: white;
 }
 
@@ -124,11 +128,15 @@ h2 {
 
 .hero-text-box {
   margin-top: auto;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
   padding: 2rem;
-  width: 50%;
-  font-size: 2rem;
-  font-weight: 300;
+  width: 35%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  position:absolute;
+  left: 200px;
+  top: 250px;
   text-transform: uppercase;
 }
 
@@ -266,6 +274,7 @@ h2 {
   height: 20px;
   position: relative;
   top: 20px;
+  left:15px;
 }
 
 .footer-items ul {
@@ -280,9 +289,10 @@ h2 {
   display: flex;
   gap: 10px;
   width: 30px;
-  margin-left: 240%;
   position: relative;
-  bottom: 50px;
+  bottom:40px;
+  left:970px;
+
 }
 
 .copyright {
@@ -311,6 +321,7 @@ h2 {
     width: 100%;
     font-size: 1.5rem;
     padding: 1rem;
+    position: static;
   }
 
   .image-container {
@@ -362,7 +373,6 @@ h2 {
     position: static;
   }
 
-  @media screen and (max-width: 768px) {
     .photo-container {
       padding: 0;
       margin: 0 auto;
@@ -402,7 +412,6 @@ h2 {
       letter-spacing: 1px;
       z-index: 2;
     }
-  }
 
   .footer-container {
     flex-direction: column;
@@ -417,10 +426,18 @@ h2 {
     align-items: center;
     gap: 1rem;
   }
+.image-logo{
+  position: static;
+  left: 20px;
+}
 
   .footer-items ul {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .copyright {
+    text-align: center;
+    position: static;
   }
 
   .media {
@@ -431,10 +448,6 @@ h2 {
     position: relative;
     top: 20px;
     left: 60px;
-  }
 
-  .copyright {
-    text-align: center;
-    position: static;
   }
 }
